@@ -1,10 +1,7 @@
 import Flagge from '../../flagge.png';
+import Homolution from '../../Homolution.svg'
 
 const Welcome = () => {
-    
-    const buy = () => {
-        
-    }
 
     return (
       <div className="flex w-full justify-center items-center">
@@ -19,17 +16,15 @@ const Welcome = () => {
               <div className="flex w-full justify-center items-center my-8 box-border h-full w-full">
                 <a href="https://pancakeswap.finance"
                     type="button"
-                    onClick={buy}
                    className="flex justify-center items-center mx-3 my-5 bg-[#ffe200] p-3 rounded-full cursor-pointer hover:bg-[#e4ca00] box-border h-full w-full"
                 >
                   <p className="text-base font-semibold"> 
-                    Buy
+                    Presale
                   </p>
                 </a>                
                 <a
                   href="https://docs.homo-finance.ml/"
                   type="button"
-                  onClick={buy}
                   className="flex justify-center items-center mx-3 my-5 bg-[#ffe200] p-3 rounded-full cursor-pointer hover:bg-[#e4ca00] box-border h-full w-full"
                 >
                   <p className="text-base font-semibold">
@@ -37,8 +32,11 @@ const Welcome = () => {
                   </p>                   
                 </a>
               </div>                 
-              <div className="flex w-full justify-center items-center">
-                  <img src={Flagge} alt="Flagge" className="w-100"/>
+              <div className="relative overflow-hidden flex w-full justify-center items-center ">
+                <img src={Flagge} alt="Flagge" className="object-cover w-100 blur-lg"/>
+                <div className="absolute flex w-full h-full justify-center items-center top-1">
+                  <img src={Homolution} alt='Homolution'/>
+                </div>
               </div>
             </div>
           </div>

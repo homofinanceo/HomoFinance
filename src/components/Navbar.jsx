@@ -20,9 +20,14 @@ const Navbar = () => {
            <img src={logo} alt="logo" className="w-32 cursor-pointer"/>
         </div>
         <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-           <li className="bg-[#ffe200] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#e4ca00]">
-             Open App
-           </li>
+            <a href="../App"
+               type="button"
+               className="bg-[#ffe200] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#e4ca00]"
+              >
+              <p className="text-base text-black font-semibold"> 
+                Open App
+              </p>
+            </a>
         </ul>
         <div className="flex relative">
         {toggleMenu
@@ -30,8 +35,13 @@ const Navbar = () => {
             : <HiMenuAlt4 fontSize={28} className="text-white md:hidden cursor-pointer " onClick={() => setToggleMenu(true)}/>
             }
             {toggleMenu && (
-                <a className="bg-[#ffe200] py-2 px-7 mx-4 rounded-full text-white cursor-pointer hover:bg-[#e4ca00]">
-                  Open App
+                <a href="../App"
+                  type="button"
+                  className="bg-[#ffe200] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#e4ca00]"
+                  >
+                  <p className="text-base text-black font-semibold"> 
+                    Open App
+                  </p>
                 </a>
                 )}
         </div>
