@@ -23,7 +23,7 @@ const Welcome = () => {
                   </p>
                 </a>                
                 <a
-                  href="https://docs.homo-finance.ml/"
+                  href="https://docs.homo-finance.com/"
                   type="button"
                   className="flex justify-center items-center mx-3 my-5 bg-[#ffe200] p-3 rounded-full cursor-pointer hover:bg-[#e4ca00] box-border h-full w-full"
                 >
